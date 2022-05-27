@@ -1,0 +1,186 @@
+body{
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    background: whitesmoke;
+}
+.header{
+    shadow: 2px 2px 12px rgba(0, 0, 0, 2);
+    background: linear-gradient(#b1248e, #961f78, #7a1962, #5f144c, #440e37);
+    height: 50px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 2);
+}
+#welcome_greet {
+    font-family: 'Tiro Bangla', serif;
+    font-size: larger;
+    font-weight: 900;
+    animation: animate 3s linear infinite;
+    animation-delay: 2s white;
+    /* width: 180px; */
+}
+@keyframes animate {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60.1%,
+  65.1%,
+  80%,
+  90.1%,
+  92% {
+    color: transparent;
+    text-shadow: none;
+  }
+  18.1%,
+  20.1%,
+  50%,
+  60%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: white;
+    text-shadow: 0 0 3px whitesmoke, 0 0 20px whitesmoke, 0 0 40px whitesmoke,
+      0 0 80px whitesmoke, 0 0 160px whitesmoke;
+  }
+}
+.navigation_bar {
+    color: whitesmoke;  
+    align-content: space-evenly;
+}
+.navigation_bar .col{
+    justify-content: center;
+    color: #fb85de;
+    font-weight: bold;
+}
+.navigation_bar .col:hover{
+    transition: .5s;
+    color: white;
+    text-shadow: 0 0 3px whitesmoke, 0 0 20px whitesmoke, 0 0 40px whitesmoke,
+      0 0 80px whitesmoke, 0 0 160px whitesmoke;
+}
+.dropdown button, .dropdown-menu{ 
+    color: #fb85de;
+    background: transparent;
+    border: transparent;
+    margin-left: -40px !important;
+}
+.dropdown button:hover{
+  color: #f0efe3;
+  background: transparent;
+  text-shadow: 0 0 3px whitesmoke, 0 0 20px whitesmoke, 0 0 40px whitesmoke,
+      0 0 80px whitesmoke, 0 0 160px whitesmoke;
+}
+.dropdown-item:hover{
+  background: linear-gradient(#b1248e, #961f78, #7a1962, #5f144c, #440e37);
+  color: #f0efe3;
+}
+.body_first_column{
+  margin-top: 200px;
+}
+.opening {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: #961f78
+}
+.hit span{
+    color: violet;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+
+.hit{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    overflow: hidden;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    animation: typing1 3s steps(27) forwards;
+}
+
+@keyframes typing1 {
+    0% {
+      width: 0px;
+    }
+    100% {
+      width: 470px;
+    }
+  }
+
+  #btn_email_me a{
+    transition: ease-out .3s;
+    margin-left: 70px;
+    color: black;
+    box-shadow: inset 300px 0 0 0 #f0efe3;
+    background: linear-gradient(#b1248e, #961f78, #7a1962, #5f144c, #440e37) ;
+  }
+
+  #btn_email_me a:hover {
+    box-shadow: inset 0 0 0 0 #f0efe3;
+    transition: .3s;
+    color: white;
+    box-shadow: 1px 5px 5px rgb(158, 155, 155);
+    /* box-shadow: 0 0 3px rgb(158, 155, 155), 0 0 20px rgb(158, 155, 155), 0 0 40px rgb(158, 155, 155),
+    0 0 80px rgb(158, 155, 155), 0 0 160px rgb(158, 155, 155);; */
+  }
+  .img_overlay {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    transform: translate(120px, -260px);
+    box-shadow: 1px 5px 5px rgb(158, 155, 155);
+    opacity: 0;
+  }
+  .img_overlay:hover{
+    opacity: 1;
+    transition: .7s;
+  }
+
+  .overlay_icon_1 a{
+    color: #3578E5;
+  }
+  .overlay_icon_1:hover{
+    border: 2px solid #3578E5;
+  }
+  
+  .overlay_icon_2 a{
+    color: #0073b1;
+  }
+  .overlay_icon_2:hover{
+    border: 2px solid #0073b1;
+  }
+
+  .overlay_icon_3 a{
+   color: #6001d2;
+  }
+  .overlay_icon_3:hover{
+    border: 2px solid #6001d2;
+  }
+
+  .overlay_icon_4:hover{
+    border: 2px solid #dd4b39;;
+  }
+
+  .overlay_icon_5 a{
+    color: black;
+   }
+  .overlay_icon_5:hover{
+    border: 2px solid black;
+  }
+
+  .language_title{
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: #961f78
+    
+  }
+  .body_second_column .first_img_cont img:hover{
+    box-shadow: 1px 5px 5px rgb(158, 155, 155);
+    transition: .5s;
+  }
+  .body_second_column .second_img_cont img:hover{
+    box-shadow: 1px 5px 5px rgb(158, 155, 155);
+    transition: .5s;
+  }
+ 
+ 
