@@ -6,151 +6,34 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <style>
-      .sign-up-form {
-        border: 1px solid #888888;
-        border-radius: 10px;
-        height: 75vh;
-      }
-      .supplementary-message {
-        font-size: 12px;
-      }
-
-      .terms-and-conditions {
-        font-size: 14px;
-      }
-
-      #sign_up_button {
-        padding-top: 20px;
-      }
-
-      a {
-        color: black;
-        text-decoration: none;
-      }
-
-      a:hover {
-        color: yellow;
-      }
-    </style>
-    <title>Sample Form</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <a href="./homepage.html" style="display: block">
-      <div class="container">
-        <div class="row py-5">
-          <div class="col-7"></div>
-          <div class="col-4 sign-up-form">
-            <div class="p-2">
-              <div class="container">
-                <div class="container">
-                  <img src="./images/shirt.jpg" />
-                  <form>
-                    <label class="pt-3">Display name</label>
-                    <input class="form-control pt-2" type="text" />
-                    <label class="pt-3">Email address</label>
-                    <input
-                      class="form-control pt-2"
-                      type="email"
-                      name="username"
-                      autocomplete="username"
-                    />
-                    <label>Number</label>
-                    <input type="number" />
+    <!-- <h1 id="introduction" onmouseenter="changeColor()">Hi I am Ean</h1>
+    <h3 class="message">Message1</h3>
+    <h3 class="message">Message2</h3>
+    <h3 class="message">Message3</h3>
+    <input id="name" />
 
-                    <label class="pt-3"
-                      >Password
-                      <a
-                        href="https://shopee.ph/buyer/login?next=https%3A%2F%2Fshopee.ph%2Fsearch%3Fkeyword%3Dtie"
-                        >Forgot password?</a
-                      ></label
-                    >
-                    <input
-                      class="form-control pt-2"
-                      type="password"
-                      minlength="8"
-                      maxlength="12"
-                    />
-                    <p class="text-muted supplementary-message">
-                      Passwords must contain at least eight characters,
-                      including at least 1 letter and 1 number.
-                    </p>
-                    <input type="checkbox" />
-                    <label class="terms-and-conditions">
-                      I agree to the terms and conditions
-                    </label>
-                    <div id="sign_up_button">
-                      <button class="btn w-100 btn-primary">
-                        <a>Sign Up</a>
-                      </button>
-                    </div>
-                  </form>
-                </div>
-                <div id="sign_up_button">
-                  <button class="btn w-100 btn-primary">
-                    <a href="./homepage.html">Sign Up</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </a>
-    <!-- <div class="container">
-      <div class="row py-5">
-        <div class="col-7"></div>
-        <div class="col-4 sign-up-form">
-          <div class="p-2">
-            <div class="container">
-              <div class="container">
-                <form>
-                  <label class="pt-3">Display name</label>
-                  <input class="form-control pt-2" type="text" />
-                  <label class="pt-3">Email address</label>
-                  <input
-                    class="form-control pt-2"
-                    type="email"
-                    name="username"
-                    autocomplete="username"
-                  />
-                  <label>Number</label>
-                  <input type="number" />
+    <button class="btn btn-primary" onclick="changeInput()">
+      Click me to change the text
+    </button>
+    <button class="btn btn-secondary" onclick="addElement()">
+      Add Element
+    </button>
+    <button class="btn btn-warning" onclick="grabInputValue()">
+      Get Input
+    </button> -->
+    <div id="container" class="redBorder"></div>
+    <input class="form-group" id="first" placeholder="Input first number" />
+    <button onclick="buildPyramid()">Draw Pyramid</button>
 
-                  <label class="pt-3"
-                    >Password
-                    <a href="./firstwebsite.html">Forgot password?</a></label
-                  >
-                  <input
-                    class="form-control pt-2"
-                    type="password"
-                    minlength="8"
-                    maxlength="12"
-                  />
-                  <p class="text-muted supplementary-message">
-                    Passwords must contain at least eight characters, including
-                    at least 1 letter and 1 number.
-                  </p>
-                  <input type="checkbox" />
-                  <label class="terms-and-conditions">
-                    I agree to the terms and conditions
-                  </label>
-                  <div id="sign_up_button">
-                    <button class="btn w-100 btn-primary">
-                      <a>Sign Up</a>
-                    </button>
-                  </div>
-                </form>
-              </div>
-              <div id="sign_up_button">
-                <button class="btn w-100 btn-primary">
-                  <a href="./homepage.html">Sign Up</a>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
+    <button class="btnrange btn btn-light">1</button>
+    <button class="btnrange btn btn-light" onclick="changeColorRange()">
+      2
+    </button>
+    <button class="btnrange btn btn-light">3</button>
+    <button class="btnrange btn btn-light">4</button>
+    <script src="./myscript.js"></script>
   </body>
 </html>

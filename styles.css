@@ -1,0 +1,22 @@
+
+:root {
+    --darkgreen: #c42626;
+    --red-100: #c48080;
+}
+
+
+h1 {
+    color: var(--red-100);
+}
+
+h2 {
+    color: var(--bs-darkgreen);
+}
+
+h3 {
+    color: var(--bs-darkgreen);
+}
+
+.redBorder {
+    border: 1px solid red;
+}
