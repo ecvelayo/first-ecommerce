@@ -1,9 +1,3 @@
-console.log('My Script works!');
-
-function sumOfTwoNumbers(a,b){
-    return a+b;
-}
-
 changeMessage = () => {
     const currentValue = document.getElementById('introduction').innerHTML;
     if (currentValue === message){
@@ -58,3 +52,58 @@ changeColorRange = () => {
     document.getElementsByClassName('btnrange')[1].setAttribute('class', 'btn-primary');
 
 }
+
+checkSignupStatus = (e) => {
+    console.log('Test');
+    e.preventDefault();
+    const username = document.getElementsByName('username')[0];
+    const usernameErrorContainer = document.getElementById('username');
+    const password = document.getElementsByName('password')[0];
+    const verifyPassword = document.getElementsByName('password')[1];
+    const age = document.getElementsByName('age')[0];
+    const birthdate = document.getElementsByName('birthdate')[0];
+    console.log(password.value, verifyPassword.value);
+
+    if (username.value && password.value && age.value && birthdate.value){
+        alert('Valid signup!');
+    }else{
+        if (!username.value){
+            // username.setAttribute('class','form-control redBorder');
+            const labelElement = document.createElement('label');
+            const labelContent = document.createTextNode('Username is required');
+            labelElement.appendChild(labelContent);
+            usernameErrorContainer.appendChild(labelElement);
+            username.classList.add('redBorder');
+            break;
+        }
+        if (!password.value){
+            password.setAttribute('class','form-control redBorder');
+        }
+        if (!age.value){
+            age.setAttribute('class','form-control redBorder');
+        }
+        if (!birthdate.value){
+            birthdate.setAttribute('class', 'form-control redBorder');
+        }
+    }
+
+    if (password === verifyPassword){
+        console.log('They\'re equal');
+    }else{
+        verifyPassword.classList.add('redBorder');
+    }
+}
+
+sendCredentials = (event) => {
+    console.log('Here');
+    const validUsername = 'admin';
+    const validPassword = 'password1234';
+    event.preventDefault();
+    const username = document.getElementsByName('username')[0].value;
+    const password = document.getElementsByName('password')[0].value;
+    if (validUsername === username && validPassword === password){
+        window.location.href="homepage.html"
+    };
+}
+
+

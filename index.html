@@ -9,31 +9,55 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <!-- <h1 id="introduction" onmouseenter="changeColor()">Hi I am Ean</h1>
-    <h3 class="message">Message1</h3>
-    <h3 class="message">Message2</h3>
-    <h3 class="message">Message3</h3>
-    <input id="name" />
+    <div class="w-50">
+      <!-- <form onsubmit="sendCredentials(event)">
+        <input
+          class="form-control"
+          name="username"
+          placeholder="Enter username"
+        />
+        <input
+          class="form-control"
+          name="password"
+          placeholder="Enter password"
+          type="password"
+        />
+        <button class="btn btn-primary">Login</button>
+      </form> -->
+      <div class="w-50">
+        <form onsubmit="checkSignupStatus(event)">
+          <div id="username"></div>
+          <input
+            class="form-control"
+            name="username"
+            type="text"
+            placeholder="Enter username"
+          />
+          <input
+            class="form-control"
+            name="age"
+            type="number"
+            placeholder="Enter age"
+          />
+          <input
+            class="form-control"
+            name="password"
+            type="password"
+            placeholder="Enter password"
+          />
+          <input
+            class="form-control"
+            name="password"
+            type="password"
+            placeholder="Verify password"
+          />
+          <label> Enter birthdate </label>
+          <input class="form-control" name="birthdate" type="date" />
+          <button class="btn btn-primary">Sign Up</button>
+        </form>
+      </div>
+    </div>
 
-    <button class="btn btn-primary" onclick="changeInput()">
-      Click me to change the text
-    </button>
-    <button class="btn btn-secondary" onclick="addElement()">
-      Add Element
-    </button>
-    <button class="btn btn-warning" onclick="grabInputValue()">
-      Get Input
-    </button> -->
-    <div id="container" class="redBorder"></div>
-    <input class="form-group" id="first" placeholder="Input first number" />
-    <button onclick="buildPyramid()">Draw Pyramid</button>
-
-    <button class="btnrange btn btn-light">1</button>
-    <button class="btnrange btn btn-light" onclick="changeColorRange()">
-      2
-    </button>
-    <button class="btnrange btn btn-light">3</button>
-    <button class="btnrange btn btn-light">4</button>
     <script src="./myscript.js"></script>
   </body>
 </html>
