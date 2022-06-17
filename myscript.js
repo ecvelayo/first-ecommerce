@@ -74,7 +74,6 @@ checkSignupStatus = (e) => {
             labelElement.appendChild(labelContent);
             usernameErrorContainer.appendChild(labelElement);
             username.classList.add('redBorder');
-            break;
         }
         if (!password.value){
             password.setAttribute('class','form-control redBorder');
@@ -105,5 +104,60 @@ sendCredentials = (event) => {
         window.location.href="homepage.html"
     };
 }
+
+displayValue = (value) => {
+    const displayContainer = document.getElementById('display');
+    displayContainer.innerHTML += value;
+}
+
+const remove = document.querySelector('.btn-danger');
+const display = document.getElementById('display');
+remove.addEventListener('click', function(){
+    display.innerHTML = '';
+})
+
+removeAll = () => {
+    const displayContainer =  document.getElementById('display');
+    displayContainer.innerHTML = '';
+}
+
+eraseLast = () => {
+    const input = document.querySelector('#display');
+    input.innerHTML.length > 0 ? input.innerHTML = input.innerHTML.slice(0,-1) : input.innerHTML = '';
+}
+
+splitCharacters = () => {
+    const finalEquation = document.querySelector('#display');
+    finalEquation.innerHTML.toString();
+    let operations = [];
+    let numbers = [];
+    let number = '';
+    for (let i = 0 ; i < finalEquation.innerHTML.length; i++){
+        if (finalEquation.innerHTML[i]*1 == finalEquation.innerHTML[i]){
+            number += finalEquation.innerHTML[i];
+            if ((i === finalEquation.innerHTML.length-1)){
+                numbers.push(parseInt(number));
+            }
+            console.log(finalEquation.innerHTML.lastIndexOf(number));
+        }else{
+            number.length === 0 ? '' : numbers.push(parseInt(number));
+            number = '';
+            operations.push(finalEquation.innerHTML[i]);
+        }
+    }
+    let output = 0;
+    const indexOfMultiply = operations.indexOf('*');
+    output = numbers[indexOfMultiply] * numbers[indexOfMultiply+1];
+    const indexOfDivision = operations.indexOf('/');
+    output = output / numbers[indexOfDivision];
+    const indexOfSubtraction = operations.indexOf('-');
+    output = output - numbers[indexOfSubtraction];
+    const indexOfAddition = operations.indexOf('+');
+    output = output + numbers[indexOfAddition];
+    console.log(output);   
+}
+
+
+
 
 
