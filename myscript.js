@@ -112,9 +112,6 @@ displayValue = (value) => {
 
 const remove = document.querySelector('.btn-danger');
 const display = document.getElementById('display');
-remove.addEventListener('click', function(){
-    display.innerHTML = '';
-})
 
 removeAll = () => {
     const displayContainer =  document.getElementById('display');
