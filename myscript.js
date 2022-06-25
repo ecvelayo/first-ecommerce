@@ -106,8 +106,8 @@ sendCredentials = (event) => {
 }
 
 displayValue = (value) => {
-    const displayContainer = document.getElementById('display');
-    displayContainer.innerHTML += value;
+    // const displayContainer = document.getElementById('display');
+    // displayContainer.innerHTML += value;
 }
 
 const remove = document.querySelector('.btn-danger');
@@ -154,7 +154,6 @@ splitCharacters = () => {
     console.log(output);   
 }
 
-
-
-
-
+// changeBackgroundColor = () => {
+//     document.querySelector('#equalsign').setAttribute('class', 'btn-danger');
+// }
